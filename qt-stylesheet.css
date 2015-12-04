@@ -1,4 +1,5 @@
 /* Fork from: https://github.com/victorhaggqvist/qtcreator-style */
+/* Manual (rus): http://habrahabr.ru/post/152367/ */
 
 QMainWindow, 
 QTreeView::branch {
@@ -91,3 +92,21 @@ QToolBar {
 QPlainTextEdit {
   background-color: #000; /* This is the editor background */
 }
+
+QTreeView::branch:closed:adjoins-item:has-children {
+	background:  solid #777;
+	margin: 6px;
+	height: 6px;
+	width: 6px;
+	border-radius: 3px;
+}
+
+/*
+QTreeView::branch:opened:adjoins-item:has-children {
+	background:  solid #777;
+	margin: 6px;
+	height: 6px;
+	width: 6px;
+	border-radius: 3px;
+}
+*/
