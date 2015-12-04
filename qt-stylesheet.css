@@ -1,12 +1,22 @@
-/* https://github.com/victorhaggqvist/qtcreator-style */
+/* Fork from: https://github.com/victorhaggqvist/qtcreator-style */
 
 QMainWindow, 
-QAbstractItemView,  
-QTreeView::branch, 
-QTabBar::tab{
+QTreeView::branch {
+        color: #EAEAEA;
+        background: #000;
+        font-size: 9pt;
+}
+
+QAbstractItemView  {
+	color: #888;
+	background: #000; 
+	font-size: 9pt;
+}
+
+QTabBar::tab {
         color: #EAEAEA;
         background: #000; 
-        font-size: 9pt;
+        /* font-size: 9pt; */
 }
 
 QAbstractItemView::item:selected {
@@ -23,7 +33,7 @@ QScrollBar {
 }
 
 QScrollBar::handle{
-     background: #494949;
+     background: #888;
      min-width: 10px;
      min-height: 10px;
 }
@@ -46,14 +56,20 @@ QTreeView::branch:closed:adjoins-item:has-children {
 }
 
 QTabBar::tab:selected {
+	color: #fff;
+	background-color: #888;
+/*
      font: bold;
      border-color: #9B9B9B;
      border-bottom-color: #C2C7CB;
- }
+*/
+}
 
+/*
 QTabBar::tab:!selected {
      margin-top: 2px;
  }
+*/
 
 QHeaderView::section {
      background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
