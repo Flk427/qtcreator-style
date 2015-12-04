@@ -9,7 +9,8 @@ QTabBar::tab{
 
 QAbstractItemView::item:selected {
         color: #EAEAEA;
-        background-color: #151515;
+        /* background-color: #151515; */
+        background-color: #000;
 }
 
 QScrollBar {
