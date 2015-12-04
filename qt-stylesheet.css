@@ -1,23 +1,24 @@
+/* https://github.com/victorhaggqvist/qtcreator-style */
+
 QMainWindow, 
 QAbstractItemView,  
 QTreeView::branch, 
 QTabBar::tab{
         color: #EAEAEA;
-        background: #333333; 
+        background: #000; 
         font-size: 9pt;
 }
 
 QAbstractItemView::item:selected {
         color: #EAEAEA;
-        /* background-color: #151515; */
-        background-color: #000;
+        background-color: #151515;
 }
 
 QScrollBar {
      border: none;
      background: #333333;
-     height: 6px;
-     width: 6px;
+     height: 12px;
+     width: 12px;
      margin: 0px;
 }
 
@@ -72,5 +73,5 @@ QToolBar {
 }
 
 QPlainTextEdit {
-  background-color: #272822; /* This is the editor background */
+  background-color: #000; /* This is the editor background */
 }
